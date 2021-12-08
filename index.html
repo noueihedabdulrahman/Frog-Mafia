@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="QWJkdWwgTm91ZWloZWQgMTAtMjYtMjAyMSAxMDoyN0FN">
+  <title>Frog Mafia</title>
+
+  <!-- JQuery CDN  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Google Fonts CDN -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Google Icons CDN -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.css" integrity="sha512-Q0DfJ+I5cbH4Wm20NlPZ/fENHil7k3ZgzI9b71LfQAB1IlM8Gt7aO7eOPX2QzYT+4fZaF6u1kSfZAHczl4r/9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Bootstrap CDN CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+<!-- Bootstrap CDN JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+<!-- AOS CSS CDN -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- AOS JS CDN -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Fancyapp CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+
+<!-- Fancyapp JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+<link type="text/css" rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- Left Sidebar Offcanvas -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Partners</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class=text-center>
+<div class="spokesperson">
+<img src="images/general/background.jpg" class="cropped-offcanvas" alt="spokesperson">
+</div>
+<br />
+<blockquote>
+As a frog, I appreciate all the help you've given me during these trying times.
+<cite>Jerry the Frog</cite>
+</blockquote>
+<a class="btn btn-outline-primary btn-offcanvas-left" href="https://www.froglife.org/" target="_blank">Froglife</a>
+<br />
+<img src="images/general/froglife.jpg" class="cropped-partner" alt="partner">
+<br />
+<a class="btn btn-outline-primary btn-offcanvas-left" href="https://savethefrogs.com/" target="_blank">Save the Frogs</a>
+<img src="images/general/stf.jpg" class="cropped-partner" alt="partner">
+</div>
+  </div>
+</div>
+  
+  <!-- Bottom Offcanvas -->
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Holiday Notice</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body small">
+    
+   <div class="alert aler-danger text-center alert-offcanvas-bottom">
+     <p>
+       <strong>For any volunteers</strong> Any applications will not be submitted during Thanksgiving and Christmas days. Please apply outside of those days!
+     </p>
+  </div>
+
+  </div>
+</div>
+  
+  <!-- Logo Section -->
+  <div class="container-fluid top-logo text-center">
+    <div class="row">
+
+      <div class="col-12 col-md-6">
+        <span class="material-icons-round material-icon md-60">
+          <a class="sidebar-icon" data-bs-toggle="offcanvas" href="#offcanvasBottom" role="button" aria-controls="offcanvasBottom">info</a>
+        </span>
+        <span class="material-icons-round material-icon md-60">
+          <a class="sidebar-icon" href="gallery.html">
+          photo
+          </a>
+        </span>
+        <span class="material-icons-round material-icon md-60">
+            <a class="sidebar-icon" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">menu</a>
+        </span>
+      </div>
+      <div class="col-12 col-md-6">
+        Frog Mafia
+      </div>
+
+    </div>
+  </div>
+  <!-- Logo Section -->
+
+  <!-- Navigation Menu -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#staff">Staff</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="schedule.html">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="form.html">Volunteer</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success btn-search" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- End of Nav -->
+
+  <!-- Carousel -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/carousel/2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Frogs Deserve Better!</h5>
+          <p>We want to ensure that frogs are recieving their best life.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/carousel/3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Donate Today!</h5>
+          <p>Your donations are much appreciated, the frogs need our help!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/carousel/4.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Why Volunteer?</h5>
+          <p>Frogs need you today, they are in a bad place!</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="ratio ratio-16x9 carousel-alternate">
+      <iframe src="https://www.youtube.com/embed/KrioWqUlpbs" title="YouTube video" allowfullscreen></iframe>
+  </div>
+<!-- End of Carousel -->
+
+  <!-- Font Awesome -->
+  <div class="container-fluid fa-row text-center">
+    <div class="row">
+
+      <div class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+          <a href="https://workspace.google.com/?utm_source=google&utm_medium=cpc&utm_campaign=na-US-all-en-dr-skws-all-all-trial-e-dr-1009892&utm_content=text-ad-none-any-DEV_c-CRE_525074074073-ADGP_Desk+%7C+SKWS+-+EXA+%7C+Txt+~+Calendar_Online+Calendar-KWID_43700064087765612-kwd-23961990&utm_term=KW_online%20calendar-ST_online+calendar&gclid=CjwKCAiAvriMBhAuEiwA8Cs5lfUxu2ewxfe9_9iqp_SiFC39K2IimDHc1IvSbhnmSCzn9XZKBRjQ9xoCkbAQAvD_BwE&gclsrc=aw.ds" target="blank">
+            <i class="fas fa-calendar text-center fa-row-icon"></i>
+          </a>
+        <br />Schedule
+      </div>
+
+      <div class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+        <a href="https://git-scm.com/" target="blank">
+          <i class="fas fa-clipboard-check text-center fa-row-icon"></i>
+        </a>   
+        <br />Verification
+      </div>
+
+      <div class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+          <a href="https://amazon.com/" target="blank">
+            <i class="fas fa-tshirt text-center fa-row-icon"></i>
+          </a>
+        <br />Store
+      </div>
+
+      <div class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+          <a href="https://youtube.com/" target="blank">
+        <i class="fas fa-skating text-center fa-row-icon"></i>
+          </a>
+        <br />Activities
+      </div>
+
+      <div class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+          <a href="https://discovery.com/" target="blank">
+        <i class="fas fa-frog text-center fa-row-icon"></i>
+          </a>
+        <br />Animals
+      </div>
+
+      <div class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+          <a href="https://yahoo.com/" target="blank">
+            <i class="fas fa-wheelchair text-center fa-row-icon"></i>
+          </a>
+        <br />Services
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Dummy Paragraph Volunteer -->
+  <div class="container volunteer-div">
+    <div class="row">
+      <div class="col">
+
+        <img src="images/general/volunteer.jpg" class="img-responsive volunteer-img" alt="Alternative Placeholder" />
+        <h2>About</h2>
+        <p1>Hello and welcome to Frog Mafia! We are a independent non-revenue organization that specializes in the aiding and support of frogs. Frog populations have been on an alarming decline for the past 30 years! This can be due to factors such as pollution, climate change, and the destruction of habitats. By partnering up with hundreds of other organizations around the world, we've been able to steep the decline of the frog populations all thanks to amazing members of our organization, such as yourself! We provide opportunities of travel and exploration, all over North and Central America. Meeting new people along the way, this expereince is good for personal growth, aiding the enviroment, and ensuring the safety of human and frog kind alike. Please consider volunteering us, so we can give you an experience of a life time, and thank you for your time!</p>
+        <div>
+          <a href="form.html" class="btn btn-outline-primary btn-volunteer">Volunteer Now!</a>
+        </div>
+
+      </div>
+    </div> <!-- Col -->
+  </div> <!-- Row -->
+  </div> <!-- Container -->
+  <!-- Gallery -->
+  <div class="container text-center">
+    <div class="row">
+
+      <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box">
+        <a data-fancybox href="images/fancybox/originals/1.jpg"> 
+        <img data-aos="zoom-in" class="img-responsive img-fancybox" src="images/fancybox/thumbs/1.jpg" alt="Alternate Placeholder" />
+        </a>      
+      </div>
+
+      <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box">
+        <a data-fancybox href="images/fancybox/originals/2.jpg">
+        <img data-aos="zoom-in" class="img-responsive img-fancybox" src="images/fancybox/thumbs/2.jpg" alt="Alternate Placeholder" />
+        </a>
+      </div>
+
+      <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box">
+        <a data-fancybox href="images/fancybox/originals/3.jpg">
+        <img data-aos="zoom-in" class="img-responsive img-fancybox" src="images/fancybox/thumbs/3.jpg" alt="Alternate Placeholder" />
+        </a>
+      </div>
+
+      <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box">
+        <a data-fancybox href="images/fancybox/originals/4.jpg">
+        <img data-aos="zoom-in" class="img-responsive img-fancybox" src="images/fancybox/thumbs/4.jpg" alt="Alternate Placeholder" />
+        </a>
+      </div>
+    </div>
+
+  <div class="row gallery-button">
+    <div class="col-12 text-center">
+      <a class="btn btn-outline-primary btn-gallery" href="gallery.html">View Gallery<a/>
+    </div>
+  </div>
+  </div>
+  <!-- End of Gallery -->
+
+  <!-- Dummy Paragraph Volunteer -->
+  <div class="container context-div">
+    <div class="row">
+      <div class="col">
+
+        <img src="images/general/contact.jpg" class="img-responsive context-img" alt="Alternate Placeholder" />
+        <h2>Contact Information</h2>
+        <p>We've got many companies and partners that can initiate credit hours for volunteering with you. You may contact us from Monday through Friday, 9AM to 5PM. Our number is (700) 940-5400, and our email is contact@frogmafia.com, either of which are our preferred method of contact.
+        <p>
+        <p>If you're looking to volunteer, please go to the volunteer page located at the top of our page. We cannot schedule any volunteer hours over the phone, and will require you to fill out the application on our website. We would love to have you, and look forward to giving and recieving a great experience from you all! Thank you again for your amazing effort and consideration to helping our small little community, helping one frog out at a time.
+        <p>
+
+        <div>
+          <a href="#FooterInfo" class="btn btn-outline-primary btn-context">Contact Now!</a>
+        </div>
+
+    </div> <!-- Col -->
+  </div> <!-- Row -->
+  </div> <!-- Container -->
+  <!-- Dummy Paragraph Context -->
+
+  <!-- Staff -->
+  <div class="container staf text-center" id="staff">
+    <div class="row">
+
+      <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+        <img data-aos="zoom-out-up" src="images/staff/thumbs/1.jpg" class="cropped" alt="Alternate Placeholder" />
+        <br />
+        <blockquote>
+          We can't decide if we love helping frogs more than we love working with these amazing people at Frog Mafia.
+          
+          <cite>Drake and Josh</cite>
+        </blockquote>
+      </div>
+      <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+        <img data-aos="zoom-out-up" src="images/staff/thumbs/2.jpg" class="cropped" alt="Alternative Placeholder" />
+        <br />
+        <blockquote>
+        This organization has opened my eyes to the reality of which frogs live in. I aim to help frogs everyday I live and breath.
+        
+        <cite>Cindy</cite>
+      </blockquote>
+
+      </div>
+      <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+        <img data-aos="zoom-out-up" src="images/staff/thumbs/3.jpg" class="cropped" alt="Alternative Placeholder" />
+        <br />
+        <blockquote>
+          I've grown out my beard during the time I've spent working with Frog Mafia. My beard looks sick now, thanks frog pals.
+          
+          <cite>Morice</cite>
+        </blockquote>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="container-fluid  footer-row text-center" id="FooterInfo">
+    <div class="row">
+      <div class="col-12 col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+        <a href="https://en.wikipedia.org/wiki/Policy" target="blank">
+        Policy
+        </a>
+      </div>
+      <div class="col-12 col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+        <a href="schedule.html">
+        Schedule
+        </a>
+      </div>
+      <div class="col-12 col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+        <a href="mailto:noueihed.abdulrahman@gmail.com">
+        Support
+        </a>
+      </div>
+      <div class="col-12 col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+        <a href="form.html">
+        Volunteer
+        </a>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Social Media Icons -->
+    <div class="row text-center">
+      <div class="col-12">
+        <a href="https://www.facebook.com" target="blank">
+          <i class="fab fa-facebook fa-social-media"></i>
+        </a>
+        <a href="https://www.instagram.com" target="blank">
+          <i class="fab fa-instagram fa-social-media"></i>
+        </a>
+        <a href="https://www.twitter.com" target="blank">
+          <i class="fab fa-twitter fa-social-media"></i>
+        </a>
+      </div>
+    </div>
+  </div> <!-- End of Footer Row -->
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

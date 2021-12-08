@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="MTIvNS8yMDIxIGF0IDExOjE3IFBNIC0gRnJvZyBNYWZpYQ=="
+    />
+    <title>Abdul Noueihed's Website</title>
+
+    <!-- JQuery CDN  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Icons CDN -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.css"
+      integrity="sha512-Q0DfJ+I5cbH4Wm20NlPZ/fENHil7k3ZgzI9b71LfQAB1IlM8Gt7aO7eOPX2QzYT+4fZaF6u1kSfZAHczl4r/9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap CDN CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap CDN JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS CSS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- AOS JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Fancyapp CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+
+    <!-- Fancyapp JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="css/schedule.css" />
+  </head>
+
+  <body>
+    <!-- Left Sidebar Offcanvas -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Partners</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="text-center">
+          <div class="spokesperson">
+            <img
+              src="images/general/background.jpg"
+              class="cropped-offcanvas"
+              alt="spokesperson"
+            />
+          </div>
+          <br />
+          <blockquote>
+            As a frog, I appreciate all the help you've given me during these
+            trying times.
+            <cite>Jerry the Frog</cite>
+          </blockquote>
+          <a
+            class="btn btn-outline-primary btn-offcanvas-left"
+            href="https://www.froglife.org/"
+            target="_blank"
+            >Froglife</a
+          >
+          <br />
+          <img
+            src="images/general/froglife.jpg"
+            class="cropped-partner"
+            alt="partner"
+          />
+          <br />
+          <a
+            class="btn btn-outline-primary btn-offcanvas-left"
+            href="https://savethefrogs.com/"
+            target="_blank"
+            >Save the Frogs</a
+          >
+          <img
+            src="images/general/stf.jpg"
+            class="cropped-partner"
+            alt="partner"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Offcanvas -->
+    <div
+      class="offcanvas offcanvas-bottom"
+      tabindex="-1"
+      id="offcanvasBottom"
+      aria-labelledby="offcanvasBottomLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasBottomLabel">
+          Holiday Notice
+        </h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body small">
+        <div class="alert aler-danger text-center alert-offcanvas-bottom">
+          <p>
+            <strong>For any volunteers</strong> Any applications will not be
+            submitted during Thanksgiving and Christmas days. Please apply
+            outside of those days!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logo Section -->
+    <div class="container-fluid top-logo text-center">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <span class="material-icons-round material-icon md-60">
+            <a
+              class="sidebar-icon"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasBottom"
+              role="button"
+              aria-controls="offcanvasBottom"
+              >info</a
+            >
+          </span>
+          <span class="material-icons-round material-icon md-60">
+            <a class="sidebar-icon" href="gallery.html">
+              photo
+            </a>
+          </span>
+          <span class="material-icons-round material-icon md-60">
+            <a
+              class="sidebar-icon"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasExample"
+              role="button"
+              aria-controls="offcanvasExample"
+              >menu</a
+            >
+          </span>
+        </div>
+        <div class="col-12 col-md-6">
+          Frog Mafia
+        </div>
+      </div>
+    </div>
+    <!-- Logo Section -->
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#staff">Staff</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="schedule.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="form.html">Volunteer</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success btn-search" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Nav -->
+
+    <!-- End of Footer Row -->
+
+    <!-- Schedule -->
+    <div class="wrapper-body">
+      <div class="wrapper-schedule">
+        <!-- Top List-->
+        <div class="wrapper-content">
+          <h1>Schedule</h1>
+          <p>
+            Please keep in mind that events may change based on weather,
+            volunteer staff availability, and other unforseen circumstances.
+          </p>
+
+          <h2>Are you looking to volunteer as a tutor?</h2>
+          <p>Reasons for volunteering</p>
+
+          <!-- This is an unorder list -->
+          <ul>
+            <li>School Credits</li>
+            <li>Sense of Community</li>
+            <li>
+              Make a Difference
+              <ul>
+                <li>Contribute to the Rainforrests</li>
+                <li>Improve your Academic Skills</li>
+                <li>Increase Natrure Awareness</li>
+              </ul>
+            </li>
+          </ul>
+          <!-- This is the end of unorder list -->
+        </div>
+        <!-- End of Top List-->
+
+        <!-- Schedule Table -->
+        <div class="table-responsive">
+          <table class="content-table">
+            <thead>
+              <tr>
+                <td>Time of day</td>
+                <td>Monday</td>
+                <td>Tuesday</td>
+                <td>Wednesday</td>
+                <td>Thursday</td>
+                <td>Friday</td>
+                <td>Saturday</td>
+                <td>Sunday</td>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th>Morning 9am-10am</th>
+                <th>Grooming</th>
+                <th>Nutrition Feeding</th>
+                <th>Planting</th>
+                <th>Frog Provisions</th>
+                <th>Vet Appointments</th>
+                <th>Frog Vaccination</th>
+                <th>Q&amp;A</th>
+              </tr>
+              <tr>
+                <td>Afternoon 1pm -3pm</td>
+                <td>Nutrition Feeding</td>
+                <td>Closed</td>
+                <td>Vaccination Documentation</td>
+                <td>Closed</td>
+                <td>Feeding</td>
+                <td>Closed</td>
+                <td>Q&amp;A</td>
+              </tr>
+              <tr>
+                <td>Evening 5pm-7pm</td>
+                <td>Closed</td>
+                <td>Nutrition Feeding</td>
+                <td>Closed</td>
+                <td>Frog Vaccination</td>
+                <td>Closed</td>
+                <td>Grooming</td>
+                <td>Q&amp;A</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- End of Schedule Table -->
+
+        <!-- Bottom List -->
+        <div class="wrapper-content">
+          <h2>Steps to Volunteer</h2>
+          <!-- This is an order list -->
+          <ol type="a">
+            <li>Go to our Volunteer Form</li>
+            <li>Qualifications for Volunteering</li>
+            <li>Submit application to our Volunteer Form</li>
+          </ol>
+        </div>
+        <!-- End of Bottom List-->
+        <!-- Wrapper Content -->
+      </div>
+      <!-- Wrapper Body -->
+    </div>
+    <!-- End of Schedule -->
+
+    <!-- Footer -->
+    <div class="container-fluid footer-row text-center" id="FooterInfo">
+      <div class="row">
+        <div class="col col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+          <a href="https://en.wikipedia.org/wiki/Policy" target="blank">
+            Policy
+          </a>
+        </div>
+        <div class="col col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+          <a href="schedule.html">
+            Schedule
+          </a>
+        </div>
+        <div class="col col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+          <a href="mailto:noueihed.abdulrahman@gmail.com">
+            Support
+          </a>
+        </div>
+        <div class="col col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+          <a href="form.html">
+            Volunteer
+          </a>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Social Media Icons -->
+      <div class="row text-center">
+        <div class="col-12">
+          <a href="https://www.facebook.com" target="blank">
+            <i class="fab fa-facebook fa-social-media"></i>
+          </a>
+          <a href="https://www.instagram.com" target="blank">
+            <i class="fab fa-instagram fa-social-media"></i>
+          </a>
+          <a href="https://www.twitter.com" target="blank">
+            <i class="fab fa-twitter fa-social-media"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End of Footer Row -->
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
